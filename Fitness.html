@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TAHA FITNESS</title>
+
+</head>
+
+<body>
+<div style="text-align:center" >
+<h1>TAHA FITNESS</h1>
+
+ <label> Age </label><input type="number" id="age" min="0"><br>
+
+ <br>
+ <label> Gender </label>			
+ <form action="">
+  <input type="radio" id="male" name="gender" value="male"> male
+  <input type="radio" id="female" name="gender" value="female"> female
+</form>	<br>
+ 
+ <label>Height:</label>
+
+ <input type="number" id="heightCentimeters" min="0" ><label> Centimeters </label><br>
+<br>
+
+
+ <label> Weight:</label> <input type="number" id="weight" min="0"><label> Kg </label><br>
+ <br>
+<input  type="button" name="calculate" value="CALCULATE" onclick="func()" ><br>
+<div id="output"  > </div> <br>
+</div>
+
+<script type="text/javascript">
+	function func() {
+	var age=document.getElementById("age").value;
+
+	var height=document.getElementById("heightCentimeters").value;
+	var weight=document.getElementById("weight").value;
+	var BMR;
+	//var gender=document.getElementById("males").value;
+	if(document.getElementById("male").checked){
+	//alert(" "+document.getElementById("male").value);
+	BMR = 66+(13.7 * weight) + (5* height) - (6.8 * age);
+	//alert(BMR);
+	
+	document.getElementById("output").innerHTML = BMR;
+	}
+	
+	
+	if(document.getElementById("female").checked){
+	//alert(" "+document.getElementById("female").value);
+	BMR = 655+(9.6 * weight) + (1.8* height) - (4.7 * age);
+	//alert(BMR);
+		document.getElementById("output").innerHTML = BMR;
+
+}
+	
+	//alert(" "+age+" "+height+" "+weight);
+}
+</script>
+
+</body>
+</html>
