@@ -5,10 +5,14 @@
 
 </head>
 
-<body background="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/15781507_105492016622541_8540434236050805662_n.jpg?oh=9eb9eb911cd8c7765dca17f4a957134b&oe=590E2E36">
+<body background="">
 <div style="text-align:center" >
-<h1>TAHA FITNESS</h1>
+<h1>TAHA Fitness</h1>
 
+<h1>Calories Calculator </h1>
+
+<br>
+ 
  <label> Age </label><input type="number" id="age" min="0"><br>
 
  <br>
@@ -26,8 +30,27 @@
 
  <label> Weight:</label> <input type="number" id="weight" min="0"><label> Kg </label><br>
  <br>
+
+<select id="activity"> 
+  <option value="activity1">Office work</option>
+  <option value="activity2">Training from 1 day to 3 days / week </option>
+  <option value="activity3">Training from 3 day to 5 days / week</option>
+  <option value="activity4">Training from 6 day to 7 days / week</option>
+  <option value="activity5">Training twice a day</option>
+</select>
+<br>
+<br>
+	
 <input  type="button" name="calculate" value="CALCULATE" onclick="func()" ><br>
-<div id="output"  > </div> <br>
+
+<br>
+
+<div id="output1"> </div> <br>
+<div id="output2"> </div> <br>
+<div id="output3"> </div> <br>
+<div id="output4"> </div> <br>
+<div id="output5"> </div> <br>
+
 </div>
 <script type="text/javascript" src="script.js"></script>
 
