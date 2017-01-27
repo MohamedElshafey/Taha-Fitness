@@ -49,7 +49,7 @@ function func() {
 	document.getElementById("output1").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay).toFixed(2) + " Calories/day to maintain your weight.";
 	document.getElementById("output2").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay -500 ).toFixed(2) + " Calories/day to lose 0.5 kg per week.";	
 	document.getElementById("output3").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay -1000 ).toFixed(2) + " Calories/day to lose 1 kg per week.";
-	document.getElementById("output4").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay -500 ).toFixed(2) +  " Calories/day to gain 0.5 kg per week.";
+	document.getElementById("output4").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay +500 ).toFixed(2) +  " Calories/day to gain 0.5 kg per week.";
 	document.getElementById("output5").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay +1000 ).toFixed(2) + " Calories/day to gain 1 kg per week.";
 	
 	
