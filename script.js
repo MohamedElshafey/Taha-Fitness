@@ -44,7 +44,7 @@ function func() {
 	}
 	
 	totalCaloriesPerDay =  BMR + x ;
-	totalCaloriesPerDay = Math.round(totalCaloriesPerDay).toFixed(2);
+
 	
 	document.getElementById("output1").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay).toFixed(2) + " Calories/day to maintain your weight.";
 	document.getElementById("output2").innerHTML =  "You need  " + Math.round(totalCaloriesPerDay -500 ).toFixed(2) + " Calories/day to lose 0.5 kg per week.";	
